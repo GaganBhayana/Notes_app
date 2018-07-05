@@ -1,0 +1,33 @@
+.add-option{
+    display:flex;
+    flex-direction: column;
+    padding: $m-size;
+}
+
+.add-option--error{
+    color: $off-white;
+    font-style: italic;
+    padding: 0 $m-size;
+    margin: $m-size 0 0 0;
+}
+
+.add-option--input{
+    flex-grow: 1;//telling this to grow with window size and shrink similarly
+    background: $dark-blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($dark-blue, 10%);
+    margin: 0 0 $s-size 0;
+    // margin-right: $s-size;
+    color: $off-white;
+    padding: $s-size;
+}
+
+//it says that aply these properties for screen sizes greater than 45rem
+@media (min-width: 45rem){
+    .add-option{
+        flex-direction: row;
+    }
+    .add-option--input{
+        margin: 0 $s-size 0 0;
+    }
+}
