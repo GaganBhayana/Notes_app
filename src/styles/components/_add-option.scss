@@ -23,7 +23,7 @@
 }
 
 //it says that aply these properties for screen sizes greater than 45rem
-@media (min-width: 45rem){
+@media (min-width: $desktop-breakpoint){
     .add-option{
         flex-direction: row;
     }
